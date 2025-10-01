@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MyPythonEditor Web</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>MyPythonEditor (Web)</h1>
+
+<!-- Tabs and controls -->
+<div id="tabs">
+    <button onclick="addTab()">+ New File</button>
+    <button onclick="saveCurrent()">Save</button>
+    <button onclick="openFile()">Open</button>
+    <button onclick="formatAutopep8()">Format (AutoPEP8)</button>
+    <button onclick="formatBlack()">Format (Black)</button>
+    <button onclick="lintCurrent()">Lint</button>
+    <button onclick="runCurrent()">Run</button>
+    <a href="YOUR_DRIVE_LINK" target="_blank">
+        <button>Download Desktop Editor</button>
+    </a>
+</div>
+
+<!-- Editor area -->
+<div id="editors"></div>
+
+<!-- Output area -->
+<h2>Output:</h2>
+<pre id="output"></pre>
+
+<script src="js/editor.js"></script>
+</body>
+</html>
